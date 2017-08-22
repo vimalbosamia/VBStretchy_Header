@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="VB_ViewController" id="BYZ-38-t0r" customClass="VB_ViewController" customModule="VBStretchy_Header" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dpt-Qo-viC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="ihm-O7-9Yv"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="ugs-qR-1P7">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ugs-qR-1P7" id="G7w-h8-wy2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="7f9-FH-2gl"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="U6K-LV-U6H"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CC6-uW-yrh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="230"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VoP-c0-9lm">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="230"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="230" id="FCK-nE-tvq"/>
+                                            <constraint firstAttribute="width" constant="375" id="NW8-aP-sWb"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="Jyk-IB-dFv"/>
+                                    <constraint firstAttribute="height" constant="230" id="Kff-lh-WhN"/>
+                                    <constraint firstItem="VoP-c0-9lm" firstAttribute="top" secondItem="CC6-uW-yrh" secondAttribute="top" id="R4n-kg-4Wa"/>
+                                    <constraint firstItem="VoP-c0-9lm" firstAttribute="leading" secondItem="CC6-uW-yrh" secondAttribute="leading" id="eoi-UV-FFG"/>
+                                    <constraint firstAttribute="bottom" secondItem="VoP-c0-9lm" secondAttribute="bottom" id="vdN-ir-ScQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="VoP-c0-9lm" secondAttribute="trailing" id="zJo-Bz-p1G"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CC6-uW-yrh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8C0-yx-uwS"/>
+                            <constraint firstAttribute="trailing" secondItem="CC6-uW-yrh" secondAttribute="trailing" id="9r0-zA-gRv"/>
+                            <constraint firstAttribute="trailing" secondItem="Dpt-Qo-viC" secondAttribute="trailing" id="DtC-4v-xlp"/>
+                            <constraint firstItem="Dpt-Qo-viC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="O17-ZD-Ycn"/>
+                            <constraint firstItem="Dpt-Qo-viC" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Pkd-Ws-oD1"/>
+                            <constraint firstItem="CC6-uW-yrh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Po5-6d-YWn"/>
+                            <constraint firstItem="Dpt-Qo-viC" firstAttribute="top" secondItem="CC6-uW-yrh" secondAttribute="top" id="YCd-Ua-cnM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8zp-iD-pDg"/>
+                    <connections>
+                        <outlet property="VBHeaderView" destination="CC6-uW-yrh" id="gcC-S3-0yl"/>
+                        <outlet property="VBMytableView" destination="Dpt-Qo-viC" id="KUc-nC-Q2g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="431" y="-569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.jpg" width="620" height="388"/>
+    </resources>
+</document>
